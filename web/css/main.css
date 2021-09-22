@@ -1,0 +1,218 @@
+body,p,h3{
+    margin:0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none; /*去掉a标签的下滑线*/
+}
+.wrap .header{
+    width: 100%;
+}
+.header .header-nav{
+    width: 1240px;
+    height: 100px;
+    margin: 0 auto;
+    line-height: 100px;
+}
+.header-nav img{
+    width: 222px;
+}
+.header-nav .nav-list{
+    float: right; /*使a列表浮动于图片右边*/
+    text-align: right; /*字体向右对齐*/
+}
+.nav-list a{
+    margin: 0 19px;/*两个a标签之间相距38px*/
+}
+.nav-list a:hover{ 
+    /*悬停a标签使其变色*/
+    color: rgb(59, 125, 248);
+}
+.header .header-banner{
+    position:relative;
+    width: 100%;
+    height: 622px;
+}
+.header-banner .banner-imgs{  
+    width: 100%;
+    height:100%;
+}
+.banner-imgs img{
+    position:absolute;
+    display: none;
+    width: 100%;
+    height:100%;
+}
+/* 选中后，再显示图片 */
+.banner-imgs .select{
+    display: block;
+}
+.banner-btn{
+    position: absolute;
+    width: 100%;
+    text-align:center;
+    bottom: 30px;
+}
+.banner-btn span{
+    display: inline-block;/*span是行内，不支持宽高度，要改成行内块显示样式*/
+    width: 12px;
+    height: 12px;
+    margin: 3px;
+    background-color:transparent;
+    border: 1px solid orange;
+    font-size: 0;/*隐藏span标签内容*/
+    border-radius: 50%;
+}
+.banner-btn .select{
+    background-color: white;
+}
+.banner-btn1 img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80px;
+    background-color: tomato;
+}
+.banner-btn1 .btn-left{
+    left: 0;
+}
+.banner-btn1 .btn-right{
+    right: 0;
+}
+.content{
+    width: 100%;
+}
+.content .content-server{
+    width: 100%;
+    margin-top: 60px;
+}
+.server-title{
+    width: 1002px;
+    border-top: 1px solid #ccc;
+    margin: 0 auto;
+}
+.server-title .title-text{
+    width: 165px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -15px;
+    background-color: white;
+}
+.title-text h3{
+    font-size: 23px;
+}
+.title-text p{
+    font-size: 14px;
+    color: rgb(148, 148, 148);
+}
+.content-server .server-synopsis{
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(148, 148, 148);
+    font-size: 14px;
+}
+.content-server .server-item{
+    width: 1054px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.server-item ul{
+    width: 100%;
+    overflow: hidden;
+}
+.server-item ul>li{
+    position: relative;
+    width: 318px;
+    height: 508px;
+    /* background-color: red; */
+    float: left;
+    margin: 0 15px;
+    border: 1px solid rgba(148,148,148);
+    text-align: center;
+}
+.server-item ul>li>img{
+    width: 220px;  
+    height: 128px;
+    margin-top: 40px;
+}
+.server-item ul>li>h4{
+    font-size: 23px;
+}
+.server-item ul>li>p{
+    width: 225px;
+    margin: 0 auto;
+    font-size: 13px;
+    text-align: left;
+}
+.server-item ul>li>button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 60px;
+    width: 148px;
+    height: 36px;
+    border: 1px solid orange;
+    color: orange;
+    line-height: 36px;
+    background-color: transparent;
+}
+.server-item ul>li>button:hover{
+    background-color: orange;
+    color: white;
+}
+.content .content-record{
+    margin-top: 60px;
+}
+.content-record .record-videos{
+    width: 1092px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.record-videos ul{
+    width: 100%;
+    overflow: hidden;
+}
+.record-videos ul>li{
+    position: relative;
+    width: 324px;
+    height: 211px;
+    float: left;
+    margin: 20px;
+    /* background-color: aquamarine; */
+}
+.record-videos ul>li>video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*帮你填充剩余空间*/
+}
+.record-videos ul>li>img{
+    position:absolute;
+    width: 60px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(204, 204, 204, 0.473);
+    border-radius: 50%;
+    z-index: 1;
+}
+.foot{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 40px;
+}
+.foot p{
+    line-height: 50px;
+}
